@@ -4,6 +4,7 @@
 @import url(blog.css);
 @import url(info.css);
 @import url(carrusel.css);
+@import url(promos.css);
 
 *{
     margin: 0;
@@ -12,9 +13,13 @@
 }
 
 body{
-    font-family: 'Open Sans', sans-serif;
+    font-family: Arial, sans-serif;
+   /* font-family: 'Open Sans', sans-serif; */
     justify-self: center;
     align-items: center;
+
+
+    
 }
 
 header{
@@ -39,6 +44,7 @@ header{
 
 h1{
     float: left;
+    color: yellow;
 }
 
 header .contenedor{   /*  limpia contenedores  */
@@ -54,10 +60,14 @@ section {
 }
 
 footer .contenedor{
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding-bottom: 25px;
+    padding: 30px 50px 30px 50px;
+    background:rgba(234, 250, 241) ;
+    border-color: black;
+    border: 15px;
 }
 .copy{
     font-size: 20px;

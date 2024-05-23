@@ -16,9 +16,8 @@
 }
 
 .info img{
-    width: 180px;
-    height: 180px;
+    height: 500px;
     border-radius: 50%;
-    border:7px solid #fff;
+    border:5px solid #fff;
 
 }

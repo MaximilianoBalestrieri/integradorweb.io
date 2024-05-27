@@ -1,0 +1,145 @@
+#contacto{
+    margin: 0px;
+    /*text-align: center;*/
+    /*border: 1px solid green;*/
+    background-image: url("../imagenes/fondoContacto.jpg");
+    /*background-color: orange;*/
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size:cover;
+    position: relative;
+}
+
+#contacto h3, h4{
+    text-align: center;
+
+}
+
+#contacto .contenedor {
+    display: flex;  /* pone las imagenes en una sola linea */
+    justify-content: center;
+    align-items: center;
+    /*flex-wrap: wrap; /* pone los elementos que no caben uno debajo del otro*/
+}
+
+#contacto article{
+    margin: 50px;
+    border-radius: 20px;
+    border: 2px outset lavender;
+    /*border-style:outset;*/
+    background-color: rgba(240, 248, 255, .5);
+    width: 40%;
+    min-width: 200px;
+    max-width: 450px;
+
+}
+
+#contacto form{
+    margin: 10px;
+}
+
+#contacto div{
+    padding: 10px;
+}
+
+
+.col-50{
+    float: left;
+    width: 50%;
+}
+
+#contacto div .fila{
+    padding: 0px;
+    width: 100%;
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 800px) {
+    .col-50, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+}
+
+input{
+    line-height: 30px;
+    width: 100%;
+}
+
+textarea{
+    width: 100%;
+    height: 50px;
+    resize: vertical;
+}
+
+input[type=date]{
+    padding-right: 30px;
+}
+
+input[type=submit]{
+    height: 40px;
+    width: 120px;
+}
+
+.mError{
+    font-style: italic;
+    font-size:smaller;
+}
+
+.requerido{
+    background-image: url(../imagenes/icon-requerido.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size:contain;
+    border: 1px solid orange;
+}
+
+.noError{
+    background-image: url(../imagenes/icon-noError.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size:contain;
+    border: 1px solid green;
+}
+
+.error{
+    background-image: url(../imagenes/icon-error.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size:contain;
+    border: 1px solid red;
+}
+/*
+#respuesta{
+    margin: 0px;
+    text-align: center;
+    border: 1px solid green;
+    background-image: url("../IMG Form/istockphoto-1161111865-1024x1024.jpg");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size:cover;
+    position: relative;
+    min-height: 500px;
+}*/
+
+#respuesta{
+    text-align: center;
+}
+
+.fondo{
+    padding-top: 300px;
+    text-align: center;
+    /*border: 1px solid green;*/
+    background-image: url("../imagenes/fondoRespuesta.jpg");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size:cover;
+    position: relative;
+    min-height: 500px;  
+}
+
+.redirec{
+    padding: 20px;
+}

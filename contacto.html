@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimun-scale=1.0">
+    <title>Salón Patapufete</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/fontello.css">
+    <link rel="icon" href="imagenes/icon-globo.png">
+</head>
+
+<body>
+    <header>
+        <div class="contenedor">
+            <h1 class="icon-birthday">Salón de Fiestas PATAPUFETE </h1>
+            <input type="checkbox" id="menu-bar">
+            <label class="icon-menu" for="menu-bar"> </label>
+            <nav class="menu">
+                <a href="index.html">Inicio</a>
+                <a href="promociones.html">Promociones</a>
+                <a href="fotos.html">Fotos</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="banner">
+            <img src="imagenes/banner2.jpg" height="200px">
+            <div class="contenedor">
+                <h2> Grandes y niños felices</h2>
+                <p> El mejor salón infantil de Villa Dolores </p>
+                <a href="videoInicio.html">Ver video </a>
+            </div>
+        </section>
+
+        <section id="contacto">
+            <div style="text-align: center;">
+                <h2>CONTÁCTENOS </h2>
+                <p>Envíe su consulta completando el siguiente formulario.</p>
+            </div>
+
+            <div class="contenedor">
+
+                <article>
+                    <form onsubmit="return validar()" action="rForm.html">
+                        <div class="fila">
+                            <div class="col-50">
+                                <label for="nombre">Nombre:</label><br>
+                                <input type="text" id="nombre" class="requerido" name="nombre"
+                                    onblur="validaNombre()"><br>
+                                <label id="nomError" class="mError"></label>
+                            </div>
+                            <div class="col-50">
+                                <label for="apellido">Apellido:</label><br>
+                                <input type="text" id="apellido" class="requerido" name="apellido"
+                                    onblur="validaApellido()"><br>
+                                <label id="apError" class="mError"></label>
+                            </div>
+                        </div>
+                        <div class="fila">
+                            <div class="col-50">
+                                <label for="telefono">Teléfono:</label><br>
+                                <input type="text" id="telefono" class="requerido" name="telefono"
+                                    onblur="validaTelefono()"><br>
+                                <label id="telError" class="mError"></label>
+                            </div>
+                            <div class="col-50">
+                                <label for="mail">e-Mail (opcional):</label><br>
+                                <input type="text" id="mail" name="mail" onblur="validaMail()"><br>
+                                <label id="mailError" class="mError"></label>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="fecha">Fecha:</label><br>
+                            <input type="date" id="fecha" class="requerido" name="fecha" onblur="validaFecha()"><br>
+                            <label id="fechaError" class="mError"></label>
+                        </div>
+                        <div>
+                            <label for="mensaje">Mensaje (opcional):</label><br>
+                            <textarea name="mensaje" id="mensaje" cols="20" rows="3"></textarea>
+                        </div>
+                        <div style="text-align: center;">
+                            <input type="submit" name="bEnviar" id="bEnviar" value="Enviar consulta!">
+                        </div>
+                    </form>
+                </article>
+            </div>
+        </section>
+
+        <section id="info">
+            <h3>
+                O llamanos!
+            </h3>
+            <p>
+                Teléfono: 3216545423 <br>
+                mail: lkdfkasdjf@asdfkjdsfk.com <br>
+                Horarios: <br>
+            <ul>
+                <li>Lunes a Viernes: 11hs a 18hs.</li>
+                <li>Sábados: 11hs a 21hs.</li>
+            </ul>
+            </p>
+        </section>
+    </main>
+    <footer>
+        <div class="contenedor">
+            <p class="copy"> Patapufete &copy; 2024 </p>
+            <div class="sociales">
+                <a class="icon-facebook" href="#"></a>
+                <a class="icon-instagram" href="https://www.instagram.com/patapufete.vd"></a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="js/contacto.js"></script>
+
+</body>
+
+</html>

@@ -1,14 +1,39 @@
-let fotoss =document.querySelector(".fotos");
+//SCRIPT para el carrusel
+movCarrusel();
 
-let index=1;
+function movCarrusel() {
+    let contenedor = document.getElementById("contenedor");
 
-let images=fotoss.querySelectorAll("img")
-setInterval(function(){ 
-    let porcentaje= index * -100;
-    fotoss.style.transform="translatex("+ porcentaje +"%)";
-    index++;
-    if (index > images.length -1){
-        index=0;
-    }
+    //Inicialmente está dos fotos a la izq OFFSETT=-100%
+    // 1 - 2 - 3 - 4
+    //       |   |
 
-},2000);
+    //FAST!! Mueve a la derecha, lleva el OFFSET+60% = -40%
+    //     1 - 2 - 3 - 4
+    //       |   |
+    let offset = -41.5;
+    contenedor.style.transition = "transform 0s ease-in-out";
+    contenedor.style.transform = `translateX(${offset}%)`;
+
+    //FAST!! Rota las imagenes
+    //     2 - 3 - 4 - 1
+    //       |   |
+    let aux = document.createElement("img");
+    aux = contenedor.children[0];
+    contenedor.removeChild(contenedor.children[0]);
+    contenedor.appendChild(aux);
+
+    //SLOW!! Mueve a la izquierda, lleval el OFFSET-60% = -100%
+    // 2 - 3 - 4 - 1
+    //       |   |
+    setTimeout(function moverIzq() {
+        offset = -102.5;
+        contenedor.style.transition = "transform 1s ease-in-out";
+        contenedor.style.transform = `translateX(${offset}%)`;
+
+    }, 1000);
+}
+
+setInterval(function mover() {
+    movCarrusel();
+}, 4000);

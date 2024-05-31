@@ -113,19 +113,17 @@ input[type=submit]{
 }
 /*
 #respuesta{
-    margin: 0px;
-    text-align: center;
-    border: 1px solid green;
-    background-image: url("../IMG Form/istockphoto-1161111865-1024x1024.jpg");
-    background-position: center top;
-    background-repeat: no-repeat;
-    background-size:cover;
-    position: relative;
-    min-height: 500px;
+    
 }*/
 
-#respuesta{
+.respuesta{
     text-align: center;
+    display: block;
+    background-color: aqua;
+    border: 2px outset grey;
+    padding: 15px;
+    margin: auto;
+    max-width: 300px;
 }
 
 .fondo{

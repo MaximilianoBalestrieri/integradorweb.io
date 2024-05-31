@@ -1,18 +1,62 @@
 .carrusel {
     margin: auto;
-    width: 90%;
+    width: 70%;
     min-height: 200px;
-    overflow: hidden;
     margin-bottom: 30px;
 }
 
-.cont {
+.galeria{
+    margin: auto;
     display: flex;
-    transform: translateX(-100%);
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-inline: 10px;
+    height: 80%;
+}
+
+.galeria img{
+    max-width: 15%;
+    padding: 10px;
+}
+
+.galeria button{
+    width: 40px;
+    height: 80px;
+    padding-block: 15px;
+    border: none;
 }
 
 .cont img {
-    margin: 0.5%;
+    width: 100%;
+}
+
+.cont img {
     min-width: 60%;
     min-height: 200px;
+    max-height: 580px
+}
+
+.seleccionada{
+    opacity: 50%;
+    border: 2px inset salmon;
+    margin-inline: 15px;
+}
+
+.bDerecho{
+    background-color: white;
+    background-image: url(../imagenes/icon_flechaDerecha.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:contain;
+    margin-left: 15px;
+}
+
+.bIzquierdo{
+    background-color: white;
+    background-image: url(../imagenes/icon_flechaIzquierda.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:contain;
+    margin-right: 15px;
 }
